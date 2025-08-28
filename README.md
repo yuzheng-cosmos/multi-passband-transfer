@@ -67,7 +67,6 @@ To run with new settings, simply edit `config.yaml` and re-run the command.
 ## 📊 Output
 
 The code produces a **wide-like catalogue** with the same objects as the input deep sample, but degraded to match the noise properties and correlations of the wide survey.  
-Outputs include:  
 
 ---
 
