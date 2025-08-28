@@ -47,17 +47,17 @@ Typical options include:
 
 ```yaml
 # Input catalogues
-deep_catalogue: path/to/deep.fits
-wide_catalogue: path/to/wide.fits
+deep_fits: path/to/deep.fits
+wide_fits: path/to/wide.fits
 
 # Nearest-neighbour search
-k_neighbours: 50
+nn_k: 50
 
 # Number of realisations per object
-n_realisations: 10
+num_realisations: 10
 
 # Output file
-output_catalogue: wide_like.fits
+output_fits: wide_like.fits
 ```
 
 To run with new settings, simply edit `config.yaml` and re-run the command.
