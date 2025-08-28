@@ -1,0 +1,28 @@
+deep_fits: "FS_corr_deep.fits" #input deep catalogue
+wide_fits: "FS_corr_wide.fits" #input wide catalogue
+output_fits: "FS_corr_mock.fits" #output file name
+
+# bands for multi-passband transfer
+deep_bands:  [flux_vis, flux_y, flux_j, flux_h, flux_g, flux_r, flux_i, flux_z] 
+deep_errors: [flux_err_vis, flux_err_y, flux_err_j, flux_err_h, flux_err_g, flux_err_r, flux_err_i, flux_err_z]
+
+wide_bands:  [flux_vis, flux_y, flux_j, flux_h, flux_g, flux_r, flux_i, flux_z]
+wide_errors: [flux_err_vis, flux_err_y, flux_err_j, flux_err_h, flux_err_g, flux_err_r, flux_err_i, flux_err_z]
+
+# SNR cut (on deep columns)
+## if band is not specified, then it will the first element from deep_bands
+snr_band: deep_flux_vis
+snr_err_band: deep_flux_err_vis
+snr_threshold: 10
+
+# Columns to keep from the deep catalogue to the mock catalogue
+meta_columns: [unique_id, spec_z, phz_NNPZ, phz_ML]
+
+
+truncate_deep: 500000 # Number of deep ojbect to mock
+shuffle: true
+num_realisations: 10 # Number of realisations for a deep object
+nn_k: 25 # Number of nearest neighbour
+random_seed: 42
+log_chunk: 2000 # Status report every N deep rows 
+dtype_float: float64
