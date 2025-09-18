@@ -60,8 +60,12 @@ num_realisations: 10
 output_fits: wide_like.fits
 ```
 
-To run with new settings, simply edit `config.yaml` and re-run the command.
-
+**Notes:**
+- The `deep_fits` and `wide_fits` files must be in a format readable by `astropy.table.Table`.
+- Each column should represent a flux or flux-error measurement in a specific band.
+- Each row should correspond to a single galaxy/source.
+- To run with new settings, simply edit `config.yaml` and re-run the command.
+  
 ---
 
 ## 📊 Output
