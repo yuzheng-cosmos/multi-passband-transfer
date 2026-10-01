@@ -26,7 +26,7 @@ For details, see the accompanying publication:
 Clone the repository:
 
 ```bash
-git clone [https://github.com/yourusername/MPT.git](https://github.com/yuzheng-cosmos/multi-passband-transfer.git)
+git clone https://github.com/yuzheng-cosmos/multi-passband-transfer.git
 cd MPT
 ```
 
